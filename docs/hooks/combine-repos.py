@@ -87,7 +87,7 @@ def structure_mastg(docs_dir):
 
     log.info(f"Using MASTG directory: {mastg_repo_dir}")
     
-    directories = ["knowledge", "tests", "techniques", "tools", "apps", "demos", "rules", "utils", "best-practices"]
+    directories = ["knowledge", "tests", "techniques", "tools", "apps", "demos", "rules", "utils", "best-practices", "workshops"]
     
     for d in directories:
         src = mastg_repo_dir / d
@@ -144,6 +144,7 @@ def structure_mastg(docs_dir):
         "apps": "../../../../../assets/Images/",
         "best-practices": "../../../../../assets/Images/",
         "demos": "../../../../../assets/Images/",
+        "workshops": "../../../../assets/Images/",
     }
 
     for subdir, rel_img in rel_paths.items():

@@ -578,6 +578,12 @@ def on_page_markdown(markdown, page, config, **kwargs):
         apps_of_type = [reorder_dict_keys(app, column_titles.keys()) for app in apps]
         return append_to_page(markdown, list_of_dicts_to_md_table(apps_of_type, column_titles) )
 
+    elif path.endswith("workshops/index.md"):
+        column_titles = {'id': 'ID', 'title': 'Title'}
+        workshops = get_mastg_components_dict("docs/MASTG/workshops")
+        workshops_columns_reordered = [reorder_dict_keys(workshop, column_titles.keys()) for workshop in workshops]
+        return append_to_page(markdown, list_of_dicts_to_md_table(workshops_columns_reordered, column_titles))
+
     elif path.endswith("MASWE/index.md"):
         # weaknesses/index.md
 

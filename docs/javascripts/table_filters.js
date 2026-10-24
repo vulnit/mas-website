@@ -126,7 +126,8 @@
     '/MASTG/techniques/': ['status', 'used_in', 'platform', 'search'],
     '/MASTG/demos/': ['status', 'platform', 'search'],
     '/MASTG/best-practices/': ['status', 'platform', 'search'],
-    '/MASTG/apps/': ['status', 'platform', 'search']
+    '/MASTG/apps/': ['status', 'platform', 'search'],
+    '/MASTG/workshops/': ['search']
   };
 
   // Allow runtime overrides via window.MAS_TABLE_FILTERS = { pathSubstring: ['group', ...] }

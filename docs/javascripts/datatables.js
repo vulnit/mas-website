@@ -11,6 +11,7 @@ document$.subscribe(function() {
         'techniques',
         'tests',
         'tools',
+        'workshops',
         'MASWE'
     ];
 

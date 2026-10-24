@@ -123,6 +123,7 @@ def on_post_page(output, page, config):
     output = re.sub(r'/tags/#tag:app"', '/MASTG/apps/"' , output)
     output = re.sub(r'/tags/#tag:best"', '/MASTG/best-practices/"' , output)
     output = re.sub(r'/tags/#tag:tech"', '/MASTG/techniques/"' , output)
+    output = re.sub(r'/tags/#tag:workshop"', '/MASTG/workshops/"' , output)
     output = re.sub(r'/tags/#tag:network"', '/MASTG/tests/#network"' , output)
 
     for profile in PROFILE_ORDER:
