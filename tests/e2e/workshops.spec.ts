@@ -9,7 +9,7 @@ test('should navigate from MASTG to a workshop with working references and image
   await expect(page).toHaveURL(/\/MASTG\/workshops\/#?$/);
   await expect(page.getByRole('heading', { name: 'Workshops', exact: true })).toBeVisible();
 
-  const workshop = page.getByRole('row').filter({ hasText: 'MASTG-WORKSHOP-0001' });
+  const workshop = page.getByRole('row').filter({ hasText: 'MASTG-WORK-0001' });
   const title = 'Mobile Application Resilience for Beginners';
   await expect(workshop).toContainText(title);
   const search = content.getByRole('textbox');
@@ -20,7 +20,7 @@ test('should navigate from MASTG to a workshop with working references and image
   await expect(workshop).toBeVisible();
   await workshop.getByRole('link', { name: title }).click();
 
-  await expect(page).toHaveURL(/\/MASTG\/workshops\/MASTG-WORKSHOP-0001\/MASTG-WORKSHOP-0001\/$/);
+  await expect(page).toHaveURL(/\/MASTG\/workshops\/MASTG-WORK-0001\/MASTG-WORK-0001\/$/);
   await expect(content.getByRole('heading', { level: 1 })).toContainText(title);
   await expect(content.locator('a[href$="/MASTG-TEST-0325"]').first()).toBeVisible();
   await expect(page.locator('.md-sidebar--primary').getByRole('link', { name: 'Workshops', exact: true })).toBeVisible();

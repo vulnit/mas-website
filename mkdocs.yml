@@ -204,7 +204,7 @@ nav:
           - ... | flat | MASTG/apps/ios/*.md
       - Workshops:
         - MASTG/workshops/index.md
-        - ... | flat | MASTG/workshops/**/MASTG-WORKSHOP-*.md
+        - ... | flat | MASTG/workshops/**/MASTG-WORK-*.md
   - "MAS Profiles":
       - Profiles/index.md
       - Profiles/Using-MAS-Profiles.md
@@ -275,7 +275,7 @@ theme:
       demo: material/flask-outline
       tech: material/magic-staff # fontawesome/solid/wand-magic-sparkles
       best: material/shield-check
-      workshop: material/human-male-board
+      work: material/human-male-board
       maswe: octicons/shield-24
       masvs: simple/owasp
       masvs-storage: simple/owasp
@@ -476,7 +476,7 @@ extra:
     masvs-privacy-4: masvs-privacy
     masvs: masvs
     best: best
-    workshop: workshop
+    work: work
   status:
     placeholder: This page is a placeholder.
     deprecated: This page is deprecated.
