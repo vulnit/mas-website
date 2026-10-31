@@ -55,9 +55,9 @@ def download_cwe_titles():
 
     return {
         weakness.get('ID'): weakness.get('Name')
-        for weakness in root.iter()
-        if weakness.tag.rsplit('}', 1)[-1] == 'Weakness'
-        and weakness.get('ID')
+        # The namespace wildcard also skips comments, whose tag is not a string
+        for weakness in root.iter('{*}Weakness')
+        if weakness.get('ID')
         and weakness.get('Name')
     }
 
